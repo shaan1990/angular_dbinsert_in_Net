@@ -67,10 +67,34 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="basicAjs.aspx" />
+    <Content Include="DbConnection.asmx" />
+    <Content Include="RecordInsertion.aspx" />
+    <Content Include="scripts\angular.min.js" />
+    <Content Include="scripts\jquery-1.12.2.min.js" />
+    <Content Include="scripts\scriptdb.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="basicAjs.aspx.cs">
+      <DependentUpon>basicAjs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="basicAjs.aspx.designer.cs">
+      <DependentUpon>basicAjs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DbConnection.asmx.cs">
+      <DependentUpon>DbConnection.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecordInsertion.aspx.cs">
+      <DependentUpon>RecordInsertion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecordInsertion.aspx.designer.cs">
+      <DependentUpon>RecordInsertion.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
